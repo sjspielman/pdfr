@@ -19,6 +19,4 @@ Print the head() of a data frame or tibble
 }
 \examples{
 hpdfr(iris)
-iris \%>\% hpdfr()  ## when the dplyr package is loaded
-iris \%>\% hpdfr(10)  ## print top 10 rows, when the dplyr package is loaded
 }

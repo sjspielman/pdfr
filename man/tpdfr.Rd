@@ -19,6 +19,4 @@ Print the tail() of a data frame or tibble
 }
 \examples{
 tpdfr(iris)
-iris \%>\% tpdfr()  ## when the dplyr package is loaded
-iris \%>\% tpdfr(10)  ## print bottom 10 rows, when the dplyr package is loaded
 }

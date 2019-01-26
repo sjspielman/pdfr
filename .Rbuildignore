@@ -1,0 +1,6 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+LICENSE
+^\.travis\.yml$
+.DS_Store
+cran_comments.md

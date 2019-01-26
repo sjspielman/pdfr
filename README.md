@@ -1,2 +1,7 @@
 # pdfr
-R package for printing data frames with fewer letters to type
+
+[![Travis-CI Build Status](https://travis-ci.org/sjspielman/pdfr.svg?branch=master)](https://travis-ci.org/sjspielman/pdfr)
+
+ 
+R package for printing data frames by typing `pdfr()` rather than `print.data.frame()`, for the lazy monster in all of us.
+

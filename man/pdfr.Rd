@@ -19,5 +19,4 @@ Printing full data frames by typing `pdfr()` rather than typing `print.data.fram
 }
 \examples{
 pdfr(iris)
-iris \%>\% pdfr()  ## when the dplyr package is loaded
 }

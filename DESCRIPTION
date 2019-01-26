@@ -1,9 +1,8 @@
 Package: pdfr
 Type: Package
-Title: Print data frames with less typing
+Title: Print Data Frames with less Typing
 Version: 0.1.0
-Authors@R: c( person("Stephanie J.", "Spielman", role = c("aut", "cre"), email =
-    "spielman@rowan.edu"))
+Authors@R: c( person("Stephanie J.", "Spielman", role = c("aut", "cre"), email = "spielman@rowan.edu"))
 Maintainer: Stephanie J. Spielman <spielman@rowan.edu>
 Description: The primary purpose of this package is to make life marginally more convenient by typing `pdfr()` rather than the unwieldy `print.data.frame()`.
 License: GPL-3
@@ -14,3 +13,5 @@ BugReports: https://github.com/sjspielman/pdfr/issues
 Repository: CRAN
 NeedsCompilation: no
 RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, tidyverse
+VignetteBuilder: knitr
