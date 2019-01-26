@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-The primary of the `pdfr` package is to save you, the time-limited user, from having to type 12 (yes, 12!) extra characters when printing out full data frames. We introduce the function `pdfr()` as a simple wrapper for `print.data.frame()`. 
+The primary of the `pdfr` package is to save you, the time-limited user, from having to type 12 (yes, 12!) extra characters when printing out full data frames. Intruiged? Read on...
 
 This mostly comes in handy when trying to view the *entire* data frame (or more likely, tibble) being piped through a `tidyverse` pipeline. One of the generally intelligent decisions that `tibble` makes is to only print the first several columns, and first several rows, to save your eyeballs from scrolling:
 
@@ -30,15 +30,18 @@ msleep.tib <- as.tibble(msleep)
 msleep.tib %>% filter(vore == "omni")
 ```
 
-In this case, however, you can't actually see all the columns.
-Sometimes, it is actually desirable to view the entire output. Normally you'd have to type `print.data.frame()`:
+In this case, however, you can't actually see all the columns. Sometimes, it is actually desirable to view the entire output. 
+
+On one hand, this sort of problem can be solved by setting tibble options, e.g. `options(tibble.print_max = Inf)`. But maybe you can't remember to type this line, or maybe you only *sometimes* want to print the whole data.
+
+In those circumstances, you'll often find yourself piping into `print.data.frame()`:
 
 ```{r}
-#> So many characters to type!
 msleep.tib %>% filter(vore == "omni") %>% print.data.frame()
 ```
 
-But now, you can do it in 4 instead of 16 characters! What a relief!
+
+That's all well and good, but *16 characters*?! How can lazy programmers like you and me cope with this undue burden? Finally, the answer has arrived - you will find salvation in the `pdfr()` package:
 ```{r}
 library(pdfr)
 
@@ -46,6 +49,9 @@ library(pdfr)
 msleep.tib %>% filter(vore == "omni") %>% pdfr()
 ```
 
+Now that felt much better. Phew.
+
+<br><br>
 There are also two other useful functions, `hpdfr()` and `tpdfr()` which will print the head or tail, respectively, of the full data frame. Below are examples of using `hpdfr()`, and `tpdfr()` works in the same way.
 ```{r}
 #> Print the full head
