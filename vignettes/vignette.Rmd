@@ -20,8 +20,10 @@ The primary of the `pdfr` package is to save you, the time-limited user, from ha
 
 This mostly comes in handy when trying to view the *entire* data frame (or more likely, tibble) being piped through a `tidyverse` pipeline. One of the generally intelligent decisions that `tibble` makes is to only print the first several columns, and first several rows, to save your eyeballs from scrolling:
 
-```{r}
-library(tidyverse)
+```{r message=FALSE, warning=FALSE}
+library(ggplot2) #> contains example data set
+library(dplyr)   #> allows demo of piping
+library(tibble)  #> show demo with tibbles
 
 msleep.tib <- as.tibble(msleep)
 

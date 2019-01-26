@@ -13,5 +13,5 @@ BugReports: https://github.com/sjspielman/pdfr/issues
 Repository: CRAN
 NeedsCompilation: no
 RoxygenNote: 6.1.1
-Suggests: knitr, rmarkdown, tidyverse
+Suggests: knitr, rmarkdown, ggplot2, tibble, dplyr
 VignetteBuilder: knitr
