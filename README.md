@@ -5,3 +5,4 @@
  
 R package for printing data frames by typing `pdfr()` rather than `print.data.frame()`, for the lazy monster in all of us.
 
+This package is, of course, extremely serious. 
